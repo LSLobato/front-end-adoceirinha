@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Doceirinha</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#doces">Doces</a>
+        <a href="#cadastro">Cadastro</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main>
+        <img class="banner" src="https://via.placeholder.com/1200x300" alt="Banner">
+
+        <div id="doces" style="display: flex; flex-wrap: wrap;">
+            <div class="card">
+                <h2>Card 1</h2>
+                <p>Conteúdo do Card 1...</p>
+            </div>
+
+            <div class="card">
+                <h2>Card 2</h2>
+                <p>Conteúdo do Card 2...</p>
+            </div>
+
+            <div class="card">
+                <h2>Card 3</h2>
+                <p>Conteúdo do Card 3...</p>
+            </div>
+        </div>
+        <!--descricao, gereno, categoria, imagem  valor_atual-->
+        <form id="cadastro">
+            <h2>Doces:</h2>
+            <label>Descricao:</label>
+            <input type="text" id="descricao" name="name" required>
+
+            <label>Genero:</label>
+
+            <label>masculino</label>
+            <input type="radio" id="genero" name="genero" value="m">
+
+            <label>feminino</label>
+            <input type="radio" id="genero" name="genero" value="f">
+
+            <label>unisex</label>
+            <input type="radio" id="genero" name="genero" value="u">
+
+            <label>Categoria:</label>
+            <input type="text" id="categoria" name="categoria" required>
+
+            <label>Imagem:</label>
+            <input type="file" id="imagem" name="imagem" required>
+
+            <label>Valor:</label>
+            <input type="text" id="valor" name="valor" required>
+
+            <button onclick="newItem()" type="submit">Enviar</button>
+        </form>
+
+        <div class="contato" id="contato">
+            <h2>Contato</h2>
+            <p><a
+                    href="https://api.whatsapp.com/send?phone=5591989898000&fbclid=PAAaZbpAkhUoGcI7ZBYIaZCxWdZf1SYDveVBnAbG8S__LjMm7uzKoOoUKQG3g">
+                    whatsapp</a><img src="img/whatsapp.png" alt="Whatsapp" height="20px" width="20px"></p>
+            <p><a href="https://instagram.com/adoceirinhabelem?igshid=OGQ5ZDc2ODk2ZA==">
+                    instagram</a><img src="img/instagram.png" alt="Instagram" height="20px" width="20px"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Seu Site. Todos os direitos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
